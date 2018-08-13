@@ -18,5 +18,6 @@ def oxford_comma(array)
       while array == array[-2]
       array << ' and '
     end
+    array
   end
 end
