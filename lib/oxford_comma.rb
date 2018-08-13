@@ -15,6 +15,6 @@ def oxford_comma(array)
       array[0..1].join(', ') << ', ' <<  'and ' << array[2]
       elsif array.length > 3 
       array.pop 
-      array.join(', ') << 'and'
+      array.join(', ') << ' and'
   end
 end
