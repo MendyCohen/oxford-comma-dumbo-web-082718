@@ -15,7 +15,7 @@ def oxford_comma(array)
       array[0..1].join(', ') << ', ' <<  'and ' << array[2]
       elsif array.length > 3 
       array.join(', ')
-      #array.each do |x|
+      array.each do |x|
        array[-2] << ' and '
      end
   end
