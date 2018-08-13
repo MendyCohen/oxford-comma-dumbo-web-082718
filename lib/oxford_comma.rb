@@ -14,10 +14,6 @@ def oxford_comma(array)
   elsif array.length == 3
       array[0..1].join(', ') << ', ' <<  'and ' << array[2]
       elsif array.length > 3 
-      array.join(', ')
-      array.each do |x|
-       if array == [-2] 
-         array << ' and '
-     end
+      array.join(', ') += array[-2] << ' and '
   end
 end
